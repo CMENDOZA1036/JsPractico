@@ -1,3 +1,5 @@
+
+
 //! Codigo del Cuadrado
 console.group("Cuadrados")
 
@@ -99,14 +101,20 @@ function areaCirculo (radio) {
 
 console.groupEnd()
 
-//* Aqui interactuamos con HTML
+//* Aqui interactuamos con HTML haciendo los calculos para los cuadrados
 
 function calcularperimetroCuadrado() {
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-    alert (perimetro);
+    if (perimetro) {
+        Swal.fire({
+            icon: 'success',
+            title: 'Perfect...',
+            text: 'Tu resultado es: ' + perimetro, //! Con esto genero alertas externas en Js
+        })
+    }
 }
 
 function calcularAreaCuadrado() {
@@ -114,9 +122,16 @@ function calcularAreaCuadrado() {
     const value = input.value;
 
     const area = areaCuadrado(value);
-    alert (area);
+    if (area) {
+        Swal.fire({
+            icon: 'success',
+            title: 'Perfect...',
+            text: 'Tu resultado es: ' + area, //! Con esto genero alertas externas en Js
+        })
+    }
 
 }
 
 
 
+//* Aqui interactuamos con HTML haciendo los calculos para los triangulos
