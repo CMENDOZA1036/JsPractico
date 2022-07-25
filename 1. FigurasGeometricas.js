@@ -135,3 +135,4 @@ function calcularAreaCuadrado() {
 
 
 //* Aqui interactuamos con HTML haciendo los calculos para los triangulos
+
