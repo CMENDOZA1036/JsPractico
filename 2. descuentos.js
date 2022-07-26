@@ -22,8 +22,8 @@ function calcularPrecioConDescuento (precio, descuento) {
 }
 
 function onClickButtonPriceDiscount() {
-    const inputPrice = document.getElementById ("InputPrice");
-    const priceValue = InputPrice.value;
+    const inputPrice = document.getElementById ("InputPrice");//! Con este activamos el campo inputPrice de HTML
+    const priceValue = InputPrice.value; //! Con este traemos el valor puesto en ese campo
 
     const inputDiscount = document.getElementById ("InputDiscount")
     const discountValue = InputDiscount.value; 
